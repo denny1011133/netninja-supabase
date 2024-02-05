@@ -1,7 +1,7 @@
 import './globals.css';
 import { Rubik } from 'next/font/google';
 
-export const dynamic = 'force-dynamic ';
+export const dynamic = 'force-dynamic';
 const rubik = Rubik({ subsets: ['latin'] });
 
 export const metadata = {

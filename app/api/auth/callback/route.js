@@ -5,8 +5,7 @@ import { NextResponse } from 'next/server';
 export async function GET(request) {
   const url = new URL(request.url);
   const code = url.searchParams.get('code');
-  console.log('cookies', cookies);
-  console.log('code', code);
+
   if (code) {
     const supabase = createRouteHandlerClient({ cookies });
     await supabase.auth.exchangeCodeForSession(code);
